@@ -5,17 +5,24 @@
 ```
 ┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
 │  Requirement│    │ Architecture│    │    Design   │    │ Development │    │    Review   │
-│    Issue    │───▶│   Design    │───▶│   Details   │───▶│  + Code PR  │───▶│ + All Agents│──▶ Done
+│    Issue    │───▶│   Design    │───▶│   Details   │───▶│  + README   │───▶│ + All Agents│──▶ Done
 └─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘
        │                  │                  │                  │                  │
        │                  │                  │                  │                  │
        ▼                  ▼                  ▼                  ▼                  ▼
   [User Creates]    Architect drafts    Designer creates    Developer codes    Multi-Agent
-                     User LGTM ▲       User LGTM ▲         Tester tests      Review
+                     User LGTM ▲       User LGTM ▲         + README          Review
                                 │                  │                  │
                                 └──────────────────┴──────────────────┘
                                             LGTM Required
 ```
+
+## Development Phase Checklist
+
+开发完成必须包含：
+- [ ] 核心功能代码实现
+- [ ] README.md 包含：功能说明、操作指南、技术栈、项目结构
+- [ ] 代码提交到仓库
 
 ## Multi-Agent Code Review
 
