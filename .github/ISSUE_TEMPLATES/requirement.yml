@@ -1,0 +1,28 @@
+name: Requirement
+description: Submit a new software requirement
+title: "[REQ] "
+labels: ["requirement", "pending-lgtm"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Requirement Specification
+        
+        ### Background
+        (Why is this needed?)
+        
+        ### Functionality
+        (What should this do?)
+        
+        ### Acceptance Criteria
+        - [ ] Criteria 1
+        - [ ] Criteria 2
+        - [ ] Criteria 3
+        
+        ### Priority
+        - [ ] High
+        - [ ] Medium
+        - [ ] Low
+        
+        ### Notes
+        (Additional context, constraints, etc.)

@@ -1,0 +1,31 @@
+name: Detailed Design
+description: Detailed design document
+title: "[DESIGN] "
+labels: ["design", "pending-lgtm"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Detailed Design Document
+        
+        ### Requirement Reference
+        (Link to the original requirement issue)
+        
+        ### Module Structure
+        (Directory structure, file organization)
+        
+        ### Database Schema
+        (Tables, fields, indexes, relationships)
+        
+        ### API Specification
+        | Method | Endpoint | Description |
+        |--------|----------|-------------|
+        | GET | /api/... | ... |
+        | POST | /api/... | ... |
+        
+        ### Interface Definitions
+        (Input/Output models, error codes)
+        
+        ### Approval Status
+        - [ ] Designer: Pending Review
+        - [ ] PM: **LGTM Required**

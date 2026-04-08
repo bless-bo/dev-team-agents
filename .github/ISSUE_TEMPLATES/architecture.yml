@@ -1,0 +1,34 @@
+name: Architecture Design
+description: Architecture design document
+title: "[ARCH] "
+labels: ["architecture", "pending-lgtm"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Architecture Design Document
+        
+        ### Requirement Reference
+        (Link to the original requirement issue)
+        
+        ### Technical Architecture
+        (System architecture diagram, component design)
+        
+        ### Technology Stack
+        - Language:
+        - Framework:
+        - Database:
+        - Infrastructure:
+        
+        ### Key Design Decisions
+        1.
+        2.
+        3.
+        
+        ### Risk Assessment
+        - Risk 1:
+        - Risk 2:
+        
+        ### Approval Status
+        - [ ] Architect: Pending Review
+        - [ ] PM: **LGTM Required**
