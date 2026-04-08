@@ -4,18 +4,31 @@
 
 ```
 ┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
-│  Requirement│    │ Architecture│    │    Design   │    │ Development │    │   Testing   │
-│    Issue    │───▶│   Design    │───▶│   Details   │───▶│  + Code PR  │───▶│   Report    │
+│  Requirement│    │ Architecture│    │    Design   │    │ Development │    │    Review   │
+│    Issue    │───▶│   Design    │───▶│   Details   │───▶│  + Code PR  │───▶│ + All Agents│──▶ Done
 └─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘
        │                  │                  │                  │                  │
        │                  │                  │                  │                  │
        ▼                  ▼                  ▼                  ▼                  ▼
-  [User Creates]    Architect drafts    Designer creates    Developer codes    Tester tests
-                     User LGTM ▲         User LGTM ▲         Tester reviews    User LGTM ▲
+  [User Creates]    Architect drafts    Designer creates    Developer codes    Multi-Agent
+                     User LGTM ▲       User LGTM ▲         Tester tests      Review
                                 │                  │                  │
                                 └──────────────────┴──────────────────┘
                                             LGTM Required
 ```
+
+## Multi-Agent Code Review
+
+When development is ready, ALL agents participate in code review:
+
+| Agent | Review Focus |
+|-------|--------------|
+| **architect** | Architecture compliance, technology choices |
+| **designer** | Design completeness, interface standards |
+| **developer** | Code quality, best practices |
+| **tester** | Test coverage, edge cases, bug risks |
+
+After all agents approve → User final LGTM → Done
 
 ## Issue Labels
 
@@ -25,7 +38,7 @@
 | `architecture` | 1 | Architecture design phase |
 | `design` | 2 | Detailed design phase |
 | `development` | 3 | Code implementation phase |
-| `testing` | 4 | Testing and QA phase |
+| `review` | 4 | Multi-agent code review |
 | `pending-lgtm` | * | Awaiting user approval |
 | `approved` | * | Approved, proceed to next phase |
 | `rejected` | * | Rejected, needs rework |
@@ -52,4 +65,4 @@
 | `architecture` | architect |
 | `design` | designer |
 | `development` | developer |
-| `testing` | tester |
+| `review` | architect + designer + developer + tester |
